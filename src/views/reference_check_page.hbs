@@ -1,0 +1,17 @@
+<header class="reference-check__header">
+  <h1 class="reference-check__header__title"> Tutor Tutee Connect </h1>
+  <h3 class="reference-check__sub-header"> Reference form</h3>
+</header>
+<section>
+  <form class="reference-check__form" action="/reference_check" method="post">
+    {{#if success}}
+    <p>{{success}} </p>
+    {{else if error_msg}}
+    <p>{{error_msg}} </p>
+  {{/if}}
+    <h4>Confirm reference request</h4>
+    <label for="referenceCheckTutorEmail" class="reference-check__labels">Email of the person you are writing refence for: <input type="email" name="tutor_email" class="reference-check__inputs" id="referenceCheckEmail"></label>
+    <label for="referenceCheckEmail" class="reference-check__labels">Your email: <input type="email" name="referee_email" class="reference-check__inputs" id="referenceCheckEmail"></label>
+    <label for="referenceCheckButton" class="reference-check__labels"> <input type="submit" class="reference-check__inputs" id="referenceCheckButton"> </label>
+  </form>
+</section>

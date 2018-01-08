@@ -1,0 +1,25 @@
+<section class="contact" id="contactSection">
+  <h3 class="contact__heading">Talk to us...</h3>
+  <div class="contact__container">
+    <div class="contact__form__container">
+      {{#if success}}
+        <p>{{success}} </p>
+        {{else if error_msg}}
+        <p>{{error_msg}} </p>
+      {{/if}}
+      <form class="" action="/contact_form" method="post">
+        <label for="contactName" class="contact_form__labels"><input type="text" name="contact_name" id="contactName" class="contact__form__inputs" placeholder="Name"></label>
+        <label for="contactEmail" class="contact_form__labels"> <input type="text" name="contact_email" id="contactEmail" class="contact__form__inputs" placeholder="Email"> </label>
+        <label for="contactMessage" class="contact_form__labels"> <textarea name="contact_message" class="contact__form__textarea" placeholder="Message"></textarea> </label>
+        <label for="contactSubmit"> <input type="submit" value="Send message" class="contact__form__submit-button"> </label>
+      </form>
+    </div>
+    <div class="contact__details__container">
+      <ul class="contact__details__ul">
+        <li class="contact__details__lists">Email: <a href="mailto:tutortuteeconnect@gmail.com?Subject=Website%contact%form" class="contact__details__links">tutortuteeconnect@gmail.com</a></li>
+        <li class="contact__details__lists">Telephone number: 07946167602 </li>
+        <li class="contact__details__lists">Twitter: <a href="https://twitter.com/FG_webdev" class="contact__details__links">@FG_webdev</a></li>
+      </ul>
+    </div>
+  </div>
+</section>

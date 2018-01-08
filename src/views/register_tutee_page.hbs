@@ -1,0 +1,224 @@
+{{> pages_nav}}
+<header class="pages-header">
+    <h1 class="pages-header__title"> Register as a tutee </h1>
+</header>
+<section class="tutee-register">
+  <p class="tutee-register__error__info"> *All fields required.</p>
+  {{#if success}}
+  <p tutee-register__error__info>{{success}} </p>
+  {{else if error_msg}}
+    <p tutee-register__error__info>{{error_msg}} </p>
+  {{/if}}
+  <form class="tutee-register__form" action="/register_tutee" method="post">
+    <label for="tuteeRegisterFirstName" class="tutee-register__form__labels">First name<input type="text" name="first_name" id="tuteeRegisterFirstName" class="tutee-register__form__inputs"></label>
+    <label for="tuteeRegisterLastName" class="tutee-register__form__labels">Last name<input type="text" name="last_name" id="tuteeRegisterLastName" class="tutee-register__form__inputs"></label>
+    <label for="tuteeRegisterMobileNumber" class="tutee-register__form__labels">Mobile number<input type="number" name="mobile_number" id="tuteeRegisterMobileNumber" class="tutee-register__form__inputs"></label>
+    <label for="tuteeRegisterPostcode" class="tutee-register__form__labels">Postcode<input type="text" name="postcode" id="tuteeRegisterPostcode" class="tutee-register__form__inputs"></label>
+    <label for="tuteeRegisterEmail" class="tutee-register__form__labels">Email<input type="text" name="email" id="tuteeRegisterEmail" class="tutee-register__form__inputs"></label>
+    <label for="tuteeRegisterYearOfBirth" class="tutee-register__form__labels">Year of birth<input type="number" name="year_of_birth" id="tuteeRegisterYearOfBirth" class="tutee-register__form__inputs"></label>
+<div class="tutee-register__subject-container">
+    <div class="tutee-register__subject">
+      <label for="subject1" class="tutee-register__form__labels" aria-label="Subject 1">Subject 1</label>
+      <select name="subject1" id="subject1" tabindex="0" class="tutee-register__form__select">
+        <option></option>
+        <option value="Accounting">Accounting</option>
+        <option value="Arabic">Arabic</option>
+        <option value="Art">Art</option>
+        <option value="Biology">Biology</option>
+        <option value="Business Related">Business Related</option>
+        <option value="Cantonese">Cantonese</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Citizenship">Citizenship</option>
+        <option value="Combined Science">Combined Science</option>
+        <option value="Computer Studies/ICT">Computer Studies / I.T.</option>
+        <option value="Craft and Design">Craft and Design</option>
+        <option value="Drama">Drama</option>
+        <option value="Earth Science">Earth Science</option>
+        <option value="Economics">Economics</option>
+        <option value="Electronics">Electronics</option>
+        <option value="English">English</option>
+        <option value="French">French</option>
+        <option value="Genealogy">Genealogy</option>
+        <option value="Geography">Geography</option>
+        <option value="German">German</option>
+        <option value="Greek">Greek</option>
+        <option value="History">History</option>
+        <option value="Italian">Italian</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Journalism">Journalism</option>
+        <option value="Latin">Latin</option>
+        <option value="Law">Law</option>
+        <option value="Life Science">Life Science</option>
+        <option value="Mandarin">Mandarin</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Media/Communication Studies">Media / Communication Studies</option>
+        <option value="Medicine">Medicine</option>
+        <option value="Music">Music</option>
+        <option value="PE/Sport Science">PE / Sport Science</option>
+        <option value="Philosophy/ Critical Thinking">Philosophy / Critical Thinking</option>
+        <option value="Photography">Photography</option>
+        <option value="Physics">Physics</option>
+        <option value="Polish">Polish</option>
+        <option value="Politics">Politics</option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="Psychology">Psychology</option>
+        <option value="Reading & Writing skills">Reading & Writing skills</option>
+        <option value="Religious Studies">Religious Studies</option>
+        <option value="Russian">Russian</option>
+        <option value="Sociology">Sociology</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Special Needs">Special Needs</option>
+        <option value="Study Skills">Study Skills</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Urdu">Urdu</option>
+        <option value="Yoruba">Yoruba</option>
+    </select>
+      <div class="tutee-register__subject__ability-container">
+        <label for="sub1Primary" class="tutee-register__form__labels">Primary<input type="checkbox" name="sub1_level" id="sub1Primary" value="primary" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub111Plus">11 - 14 years<input type="checkbox" name="sub1_level" id="sub111Plus" value="11-14" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub1Gcse">GCSE <input type="checkbox" name="sub1_level" id="sub1Gcse" value="GCSE" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub1Alevel">A level<input type="checkbox" name="sub1_level" id="sub1Alevel" value="A level" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub1Uni">University<input type="checkbox" name="sub1_level" id="sub1Uni" value="University" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub1Adult">Adult learning<input type="checkbox" name="sub1_level" id="sub1Adult" value="Adult Learning" class="tutee-register__form__inputs"></label>
+      </div>
+    </div>
+    <div class="tutee-register__subject">
+      <label for="subject2" class="tutee-register__form__labels" aria-label="Subject 2" class="tutee-register__form__labels">Subject 2</label>
+      <select name="subject2" id="subject2" tabindex="0" class="tutee-register__form__select">
+        <option></option>
+        <option value="Accounting">Accounting</option>
+        <option value="Arabic">Arabic</option>
+        <option value="Art">Art</option>
+        <option value="Biology">Biology</option>
+        <option value="Business Related">Business Related</option>
+        <option value="Cantonese">Cantonese</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Citizenship">Citizenship</option>
+        <option value="Combined Science">Combined Science</option>
+        <option value="Computer Studies/ICT">Computer Studies / I.T.</option>
+        <option value="Craft and Design">Craft and Design</option>
+        <option value="Drama">Drama</option>
+        <option value="Earth Science">Earth Science</option>
+        <option value="Economics">Economics</option>
+        <option value="Electronics">Electronics</option>
+        <option value="English">English</option>
+        <option value="French">French</option>
+        <option value="Genealogy">Genealogy</option>
+        <option value="Geography">Geography</option>
+        <option value="German">German</option>
+        <option value="Greek">Greek</option>
+        <option value="History">History</option>
+        <option value="Italian">Italian</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Journalism">Journalism</option>
+        <option value="Latin">Latin</option>
+        <option value="Law">Law</option>
+        <option value="Life Science">Life Science</option>
+        <option value="Mandarin">Mandarin</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Media/Communication Studies">Media / Communication Studies</option>
+        <option value="Medicine">Medicine</option>
+        <option value="Music">Music</option>
+        <option value="PE/Sport Science">PE / Sport Science</option>
+        <option value="Philosophy/ Critical Thinking">Philosophy / Critical Thinking</option>
+        <option value="Photography">Photography</option>
+        <option value="Physics">Physics</option>
+        <option value="Polish">Polish</option>
+        <option value="Politics">Politics</option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="Psychology">Psychology</option>
+        <option value="Reading & Writing skills">Reading & Writing skills</option>
+        <option value="Religious Studies">Religious Studies</option>
+        <option value="Russian">Russian</option>
+        <option value="Sociology">Sociology</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Special Needs">Special Needs</option>
+        <option value="Study Skills">Study Skills</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Urdu">Urdu</option>
+        <option value="Yoruba">Yoruba</option>
+      </select>
+      <div class="tutee-register__subject__ability-container">
+        <label for="sub2Primary" class="tutee-register__form__labels">Primary<input type="checkbox" name="sub2_level" id="sub2Primary" value="primary" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub211Plus">11 - 14 years<input type="checkbox" name="sub2_level" id="sub211Plus" value="11-14" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub2Gcse">GCSE <input type="checkbox" name="sub2_level" id="sub2Gcse" value="GCSE" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub2Alevel">A level<input type="checkbox" name="sub2_level" id="sub2Alevel" value="A level" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub2Uni">University<input type="checkbox" name="sub2_level" id="sub2Uni" value="University" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub2Adult">Adult learning<input type="checkbox" name="sub2_level" id="sub2Adult" value="Adult Learning" class="tutee-register__form__inputs"></label>
+      </div>
+    </div>
+    <div class="tutee-register__subject">
+      <label for="subject3" aria-label="Subject 3" class="tutee-register__form__labels">Subject 3</label>
+      <select name="subject3" id="subject3" tabindex="0" class="tutee-register__form__select">
+        <option></option>
+        <option value="Accounting">Accounting</option>
+        <option value="Arabic">Arabic</option>
+        <option value="Art">Art</option>
+        <option value="Biology">Biology</option>
+        <option value="Business Related">Business Related</option>
+        <option value="Cantonese">Cantonese</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Citizenship">Citizenship</option>
+        <option value="Combined Science">Combined Science</option>
+        <option value="Computer Studies/ICT">Computer Studies / I.T.</option>
+        <option value="Craft and Design">Craft and Design</option>
+        <option value="Drama">Drama</option>
+        <option value="Earth Science">Earth Science</option>
+        <option value="Economics">Economics</option>
+        <option value="Electronics">Electronics</option>
+        <option value="English">English</option>
+        <option value="French">French</option>
+        <option value="Genealogy">Genealogy</option>
+        <option value="Geography">Geography</option>
+        <option value="German">German</option>
+        <option value="Greek">Greek</option>
+        <option value="History">History</option>
+        <option value="Italian">Italian</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Journalism">Journalism</option>
+        <option value="Latin">Latin</option>
+        <option value="Law">Law</option>
+        <option value="Life Science">Life Science</option>
+        <option value="Mandarin">Mandarin</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Media/Communication Studies">Media / Communication Studies</option>
+        <option value="Medicine">Medicine</option>
+        <option value="Music">Music</option>
+        <option value="PE/Sport Science">PE / Sport Science</option>
+        <option value="Philosophy/ Critical Thinking">Philosophy / Critical Thinking</option>
+        <option value="Photography">Photography</option>
+        <option value="Physics">Physics</option>
+        <option value="Polish">Polish</option>
+        <option value="Politics">Politics</option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="Psychology">Psychology</option>
+        <option value="Reading & Writing skills">Reading & Writing skills</option>
+        <option value="Religious Studies">Religious Studies</option>
+        <option value="Russian">Russian</option>
+        <option value="Sociology">Sociology</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Special Needs">Special Needs</option>
+        <option value="Study Skills">Study Skills</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Urdu">Urdu</option>
+        <option value="Yoruba">Yoruba</option>
+      </select>
+      <div class="tutee-register__subject1__ability-container">
+        <label for="sub3Primary" class="tutee-register__form__labels">Primary<input type="checkbox" name="sub3_level" id="sub3Primary" value="primary" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub311Plus">11 - 14 years<input type="checkbox" name="sub3_level" id="sub311Plus" value="11-14" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub3Gcse">GCSE <input type="checkbox" name="sub3_level" id="sub3Gcse" value="GCSE" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub3Alevel">A level<input type="checkbox" name="sub3_level" id="sub3Alevel" value="A level" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub3Uni">University<input type="checkbox" name="sub3_level" id="sub3Uni" value="University" class="tutee-register__form__inputs"></label>
+        <label class="tutee-register__form__labels" for="sub3Adult">Adult learning<input type="checkbox" name="sub3_level" id="sub3Adult" value="Adult Learning" class="tutee-register__form__inputs"></label>
+      </div>
+    </div>
+  </div>
+    <label for="guardianFirstName" class="tutee-register__form__labels">Guardian first name <input type="text" name="guardian_first_name" id="guardianFirstName" class="tutee-register__form__inputs"> </label>
+    <label for="guardianLastName" class="tutee-register__form__labels">Guardian last name <input type="text" name="guardian_last_name" id="guardianLastName" class="tutee-register__form__inputs"> </label>
+    <label for="guardianMobileNumber" class="tutee-register__form__labels">Guardian mobile number <input type="text" name="guardian_mobile_number" id="guardianMobileNumber" class="tutee-register__form__inputs"></label>
+      <label for="guardianEmail" class="tutee-register__form__labels">Guardian email <input type="text" name="guardian_email" id="guardianEmail" class="tutee-register__form__inputs"> </label>
+    <label for="tuteeRegisterPassword" class="tutee-register__form__labels">Password<input type="password" name="password" id="tuteeRegisterPassword" class="tutee-register__form__inputs"> </label>
+    <label for="tuteeRegisterConfirmPassword" class="tutee-register__form__labels">Confirm password<input type="password" name="confirm_password" id="tuteeRegisterConfirmPassword" class="tutee-register__form__inputs" > </label>
+    <label for="tuteeRegisterSubmit" class="tutee-register__form__labels"> <input type="submit" value="Register" class="tutee-register__form__inputs-submit"> </label>
+  </form>
+ </section>

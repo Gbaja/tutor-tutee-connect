@@ -1,0 +1,290 @@
+{{> pages_nav}}
+<header class="pages-header">
+    <h1 class="pages-header__title"> Register as a tutor </h1>
+</header>
+<section class="tutor-register">
+  <p class="tutor-register__error__info"> *All fields required.</p>
+  {{#if success}}
+    <p class="tutor-register__error__info">{{success}} </p>
+    {{else if error_msg}}
+    <p class="tutor-register__error__info">{{error_msg}} </p>
+  {{/if}}
+  <form class="tutor-register__form" action="/register_tutor" method="post">
+    <label for="tutorRegisterFirstName" class="tutor-register__form__labels">First name<input type="text" name="first_name" id="tutorRegisterFirstName" class="tutor-register__form__inputs"></label>
+    <label for="tutorRegisterLastName" class="tutor-register__form__labels">Last name<input type="text" name="last_name" id="tutorRegisterLastName" class="tutor-register__form__inputs"></label>
+    <label for="tutorRegisterMobileNumber" class="tutor-register__form__labels">Mobile number<input type="number" name="mobile_number" id="tutorRegisterMobileNumber" class="tutor-register__form__inputs"></label>
+    <label for="tutorRegisterPostcode" class="tutor-register__form__labels">Postcode<input type="text" name="postcode" id="tutorRegisterPostcode" class="tutor-register__form__inputs"></label>
+    <label for="tutorRegisterEmail" class="tutor-register__form__labels">Email<input type="text" name="email" id="tutorRegisterEmail" class="tutor-register__form__inputs"></label>
+    <label for="tutorRegisterYearOfBirth" class="tutor-register__form__labels">Year of birth<input type="number" name="year_of_birth" id="tutorRegisterYearOfBirth" class="tutor-register__form__inputs"></label>
+    <label for="tutorRegisterAbout" class="tutor-register__form__labels">About yourself<textarea name="about" rows="8" cols="80" id="tutorRegisterAbout" class="tutor-register__form__textarea"></textarea> </label>
+    <label for="tutorRegisterExperience" class="tutor-register__form__labels">Teaching Experience<textarea name="teaching_experience" rows="8" cols="80" class="tutor-register__form__textarea"></textarea> </label>
+    <label for="tutorRegisterApproach" class="tutor-register__form__labels">Approach to tutoring<textarea name="tutoring_approach" rows="8" cols="80" id="tutorRegisterApproach" class="tutor-register__form__textarea"></textarea> </label>
+    <label for="tutorRegisterEducation" class="tutor-register__form__labels">Please explain your education background<textarea name="education_background" rows="8" cols="80" id="tutorRegisterEducation" class="tutor-register__form__textarea"></textarea></label>
+    <label for="registerFormDbs" class="tutor-register__form__labels">Do you have a current DBS(CRB) check? </label>
+    <select class="" name="dbs_options" id="registerFormDbs">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+      <div class="tutor-register__subject-container">
+    <div class="tutor-register__subject">
+      <label for="subject1" class="tutor-register__form__labels" aria-label="Subject 1">Subject 1</label>
+      <select name="subject1" id="subject1" tabindex="0" class="tutor-register__form__select">
+        <option></option>
+        <option value="Accounting">Accounting</option>
+        <option value="Arabic">Arabic</option>
+        <option value="Art">Art</option>
+        <option value="Biology">Biology</option>
+        <option value="Business Related">Business Related</option>
+        <option value="Cantonese">Cantonese</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Citizenship">Citizenship</option>
+        <option value="Combined Science">Combined Science</option>
+        <option value="Computer Studies/ICT">Computer Studies / I.T.</option>
+        <option value="Craft and Design">Craft and Design</option>
+        <option value="Drama">Drama</option>
+        <option value="Earth Science">Earth Science</option>
+        <option value="Economics">Economics</option>
+        <option value="Electronics">Electronics</option>
+        <option value="English">English</option>
+        <option value="French">French</option>
+        <option value="Genealogy">Genealogy</option>
+        <option value="Geography">Geography</option>
+        <option value="German">German</option>
+        <option value="Greek">Greek</option>
+        <option value="History">History</option>
+        <option value="Italian">Italian</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Journalism">Journalism</option>
+        <option value="Latin">Latin</option>
+        <option value="Law">Law</option>
+        <option value="Life Science">Life Science</option>
+        <option value="Mandarin">Mandarin</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Media/Communication Studies">Media / Communication Studies</option>
+        <option value="Medicine">Medicine</option>
+        <option value="Music">Music</option>
+        <option value="PE/Sport Science">PE / Sport Science</option>
+        <option value="Philosophy/ Critical Thinking">Philosophy / Critical Thinking</option>
+        <option value="Photography">Photography</option>
+        <option value="Physics">Physics</option>
+        <option value="Polish">Polish</option>
+        <option value="Politics">Politics</option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="Psychology">Psychology</option>
+        <option value="Reading & Writing skills">Reading & Writing skills</option>
+        <option value="Religious Studies">Religious Studies</option>
+        <option value="Russian">Russian</option>
+        <option value="Sociology">Sociology</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Special Needs">Special Needs</option>
+        <option value="Study Skills">Study Skills</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Urdu">Urdu</option>
+        <option value="Yoruba">Yoruba</option>
+    </select>
+      <div class="tutor-register__subject__ability-container">
+        <label for="sub1Primary" class="tutor-register__form__labels">Primary<input type="checkbox" name="sub1_ability_to_teach" id="sub1Primary" value="primary" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub111Plus">11 - 14 years<input type="checkbox" name="sub1_ability_to_teach" id="sub111Plus" value="11-14" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub1Gcse">GCSE <input type="checkbox" name="sub1_ability_to_teach" id="sub1Gcse" value="GCSE" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub1Alevel">A level<input type="checkbox" name="sub1_ability_to_teach" id="sub1Alevel" value="A level" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub1Uni">University<input type="checkbox" name="sub1_ability_to_teach" id="sub1Uni" value="University" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub1Adult">Adult learning<input type="checkbox" name="sub1_ability_to_teach" id="sub1Adult" value="Adult Learning" class="tutor-register__form__inputs"></label>
+      </div>
+    </div>
+    <div class="tutor-register__subject">
+      <label for="subject2" class="tutor-register__form__labels" aria-label="Subject 2" class="tutor-register__form__labels">Subject 2</label>
+      <select name="subject2" id="subject2" tabindex="0" class="tutor-register__form__select">
+        <option></option>
+        <option value="Accounting">Accounting</option>
+        <option value="Arabic">Arabic</option>
+        <option value="Art">Art</option>
+        <option value="Biology">Biology</option>
+        <option value="Business Related">Business Related</option>
+        <option value="Cantonese">Cantonese</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Citizenship">Citizenship</option>
+        <option value="Combined Science">Combined Science</option>
+        <option value="Computer Studies/ICT">Computer Studies / I.T.</option>
+        <option value="Craft and Design">Craft and Design</option>
+        <option value="Drama">Drama</option>
+        <option value="Earth Science">Earth Science</option>
+        <option value="Economics">Economics</option>
+        <option value="Electronics">Electronics</option>
+        <option value="English">English</option>
+        <option value="French">French</option>
+        <option value="Genealogy">Genealogy</option>
+        <option value="Geography">Geography</option>
+        <option value="German">German</option>
+        <option value="Greek">Greek</option>
+        <option value="History">History</option>
+        <option value="Italian">Italian</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Journalism">Journalism</option>
+        <option value="Latin">Latin</option>
+        <option value="Law">Law</option>
+        <option value="Life Science">Life Science</option>
+        <option value="Mandarin">Mandarin</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Media/Communication Studies">Media / Communication Studies</option>
+        <option value="Medicine">Medicine</option>
+        <option value="Music">Music</option>
+        <option value="PE/Sport Science">PE / Sport Science</option>
+        <option value="Philosophy/ Critical Thinking">Philosophy / Critical Thinking</option>
+        <option value="Photography">Photography</option>
+        <option value="Physics">Physics</option>
+        <option value="Polish">Polish</option>
+        <option value="Politics">Politics</option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="Psychology">Psychology</option>
+        <option value="Reading & Writing skills">Reading & Writing skills</option>
+        <option value="Religious Studies">Religious Studies</option>
+        <option value="Russian">Russian</option>
+        <option value="Sociology">Sociology</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Special Needs">Special Needs</option>
+        <option value="Study Skills">Study Skills</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Urdu">Urdu</option>
+        <option value="Yoruba">Yoruba</option>
+      </select>
+      <div class="tutor-register__subject__ability-container">
+        <label for="sub2Primary" class="tutor-register__form__labels">Primary<input type="checkbox" name="sub2_ability_to_teach" id="sub2Primary" value="primary" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub211Plus">11 - 14 years<input type="checkbox" name="sub2_ability_to_teach" id="sub211Plus" value="11-14" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub2Gcse">GCSE <input type="checkbox" name="sub2_ability_to_teach" id="sub2Gcse" value="GCSE" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub2Alevel">A level<input type="checkbox" name="sub2_ability_to_teach" id="sub2Alevel" value="A level" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub2Uni">University<input type="checkbox" name="sub2_ability_to_teach" id="sub2Uni" value="University" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub2Adult">Adult learning<input type="checkbox" name="sub2_ability_to_teach" id="sub2Adult" value="Adult Learning" class="tutor-register__form__inputs"></label>
+      </div>
+    </div>
+    <div class="tutor-register__subject">
+      <label for="subject3" aria-label="Subject 3" class="tutor-register__form__labels">Subject 3</label>
+      <select name="subject3" id="subject3" tabindex="0" class="tutor-register__form__select">
+        <option></option>
+        <option value="Accounting">Accounting</option>
+        <option value="Arabic">Arabic</option>
+        <option value="Art">Art</option>
+        <option value="Biology">Biology</option>
+        <option value="Business Related">Business Related</option>
+        <option value="Cantonese">Cantonese</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Citizenship">Citizenship</option>
+        <option value="Combined Science">Combined Science</option>
+        <option value="Computer Studies/ICT">Computer Studies / I.T.</option>
+        <option value="Craft and Design">Craft and Design</option>
+        <option value="Drama">Drama</option>
+        <option value="Earth Science">Earth Science</option>
+        <option value="Economics">Economics</option>
+        <option value="Electronics">Electronics</option>
+        <option value="English">English</option>
+        <option value="French">French</option>
+        <option value="Genealogy">Genealogy</option>
+        <option value="Geography">Geography</option>
+        <option value="German">German</option>
+        <option value="Greek">Greek</option>
+        <option value="History">History</option>
+        <option value="Italian">Italian</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Journalism">Journalism</option>
+        <option value="Latin">Latin</option>
+        <option value="Law">Law</option>
+        <option value="Life Science">Life Science</option>
+        <option value="Mandarin">Mandarin</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Media/Communication Studies">Media / Communication Studies</option>
+        <option value="Medicine">Medicine</option>
+        <option value="Music">Music</option>
+        <option value="PE/Sport Science">PE / Sport Science</option>
+        <option value="Philosophy/ Critical Thinking">Philosophy / Critical Thinking</option>
+        <option value="Photography">Photography</option>
+        <option value="Physics">Physics</option>
+        <option value="Polish">Polish</option>
+        <option value="Politics">Politics</option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="Psychology">Psychology</option>
+        <option value="Reading & Writing skills">Reading & Writing skills</option>
+        <option value="Religious Studies">Religious Studies</option>
+        <option value="Russian">Russian</option>
+        <option value="Sociology">Sociology</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Special Needs">Special Needs</option>
+        <option value="Study Skills">Study Skills</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Urdu">Urdu</option>
+        <option value="Yoruba">Yoruba</option>
+      </select>
+      <div class="tutor-register__subject1__ability-container">
+        <label for="sub3Primary" class="tutor-register__form__labels">Primary<input type="checkbox" name="sub3_ability_to_teach" id="sub3Primary" value="primary" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub311Plus">11 - 14 years<input type="checkbox" name="sub3_ability_to_teach" id="sub311Plus" value="11-14" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub3Gcse">GCSE <input type="checkbox" name="sub3_ability_to_teach" id="sub3Gcse" value="GCSE" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub3Alevel">A level<input type="checkbox" name="sub3_ability_to_teach" id="sub3Alevel" value="A level" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub3Uni">University<input type="checkbox" name="sub3_ability_to_teach" id="sub3Uni" value="University" class="tutor-register__form__inputs"></label>
+        <label class="tutor-register__form__labels" for="sub3Adult">Adult learning<input type="checkbox" name="sub3_ability_to_teach" id="sub3Adult" value="Adult Learning" class="tutor-register__form__inputs"></label>
+      </div>
+    </div>
+  </div>
+    <div class="tutor-register__availability">
+      <label for="monday" class="tutor-register__form__labels" aria-label="Monday avalability" class="tutor-register__form__labels">Monday</label>
+      <select name="monday_avalability" id="monday" tabindex="0" class="tutor-register__form__select">
+        <option></option>
+        <option value="Unavailable">Unavailable</option>
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+        <option value="AM and PM">AM and PM</option>
+      </select>
+      <label for="tuesday" class="tutor-register__form__labels" aria-label="Tuesday avalability" class="tutor-register__form__labels">Tuesday</label>
+      <select name="tuesday_avalability" id="tuesday" tabindex="0" class="tutor-register__form__select">
+        <option></option>
+        <option value="Unavailable">Unavailable</option>
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+        <option value="AM and PM">AM and PM</option>
+      </select>
+      <label for="wednesday" class="tutor-register__form__labels" aria-label="Wednesday avalability" class="tutor-register__form__labels">Wednesday</label>
+      <select name="wednesday_avalability" id="wednesday" tabindex="0" class="tutor-register__form__select">
+        <option></option>
+        <option value="Unavailable">Unavailable</option>
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+        <option value="AM and PM">AM and PM</option>
+      </select>
+      <label for="thursday" class="tutor-register__form__labels" aria-label="Thursday avalability" class="tutor-register__form__labels">Thursday</label>
+      <select name="thursday_avalability" id="thursday" tabindex="0" class="tutor-register__form__select">
+        <option></option>
+        <option value="Unavailable">Unavailable</option>
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+        <option value="AM and PM">AM and PM</option>
+      </select>
+      <label for="friday" class="tutor-register__form__labels" aria-label="Friday avalability" class="tutor-register__form__labels">Friday</label>
+      <select name="friday_avalability" id="friday" tabindex="0" class="tutor-register__form__select">
+        <option></option>
+        <option value="Unavailable">Unavailable</option>
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+        <option value="AM and PM">AM and PM</option>
+      </select>
+      <label for="saturday" class="tutor-register__form__labels" aria-label="Saturday avalability" class="tutor-register__form__labels">Saturday</label>
+      <select name="saturday_avalability" id="saturday" tabindex="0" class="tutor-register__form__select">
+        <option></option>
+        <option value="Unavailable">Unavailable</option>
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+        <option value="AM and PM">AM and PM</option>
+      </select>
+      <label for="sunday" class="tutor-register__form__labels" aria-label="Sunday avalability" class="tutor-register__form__labels">Sunday</label>
+      <select name="sunday_avalability" id="sunday" tabindex="0" class="tutor-register__form__select">
+        <option></option>
+        <option value="Unavailable">Unavailable</option>
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+        <option value="AM and PM">AM and PM</option>
+      </select>
+    </div>
+    <label for="tutorRegisterRefereeName" class="tutor-register__form__labels"> Referee name<input type="text" name="referee_name" id="tutorRegisterRefereeName" class="tutor-register__form__inputs"> </label>
+    <label for="tutorRegisterRefereeEmail" class="tutor-register__form__labels">Referee email <input type="email" name="referee_email" id="tutorRegisterRefereeEmail" class="tutor-register__form__inputs"> </label>
+    <label for="tutorRegisterRefereeRelations" class="tutor-register__form__labels">Relationship with referee<input type="text" name="referee_relations" id="tutorRegisterRefereeRelations" class="tutor-register__form__inputs"> </label>
+    <label for="tutorRegisterPassword" class="tutor-register__form__labels">Password<input type="password" name="password" id="tutor-registerPassword" class="tutor-register__form__inputs"></label>
+    <label for="tutorRegisterConfirmPassword" class="tutor-register__form__labels">Confirm password<input type="password" name="confirm_password" id="tutorRegisterConfirmPassword" class="tutor-register__form__inputs"></label>
+    <label for="tutorRegisterButton" class="tutor-register__form__labels"><input type="submit" value="Register" id="tutorRegisterButton" class="tutor-register__form__inputs-submit"></label>
+  </form>
+</section>

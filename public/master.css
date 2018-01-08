@@ -1,0 +1,340 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: rgb(237,237,237);
+}
+.navbar__container, .pages-nav__container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar__list, .pages-nav__lists {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar__links, .pages-nav__links {
+  padding: 1rem 0.2rem;
+  text-decoration: none;
+  color: cadetblue;
+  font-size: 0.9rem;
+}
+
+.navbar__list:first-child, .pages-nav__lists:first-child {
+  margin-right: auto;
+}
+
+.heading {
+  background-image:linear-gradient(rgba(0,57,60,0.5),rgba(0,130,170,.65)), url(assets/topbckg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 47px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading__title {
+  font-size: 2.2rem;
+  color: white;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.heading__logo{
+  width: 200px;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.heading__quote{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.pages-header {
+  text-align: center;
+  background-color: cadetblue;
+  padding: 4rem 0;
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about__container {
+  width: 80%;
+  margin: 5rem auto;
+  font-size: 1.5rem;
+  text-align: center;
+  color: cadetblue;
+}
+.about__info:not(:last-child){
+  padding-bottom: 2rem;
+}
+.how {
+  background-color: cadetblue;
+  color: white;
+  padding: 2.5rem 0;
+  /* font-size: 1.3rem; */
+}
+
+.how__container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.how__join, .how__connect, .how__book {
+  margin: 1rem auto;
+  font-size: 1.3rem;
+}
+
+.how__join__title, .how__connect__title, .how__book__title {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.how__join__tutor-info, .how__connect__tutor-info, .how__book__tutor-info {
+  margin-bottom: 2rem;
+}
+
+.how__join__tutor-info, .how__connect__tutor-info, .how__book__tutor-info, .how__join__tutee-info, .how__connect__tutee-info, .how__book__tutee-info {
+  font-size: 1.4rem;
+}
+
+.how__fees{
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 1.4rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.join__container {
+  margin: 6rem 0;
+}
+
+.join__heading {
+  color: cadetblue;
+  padding-left: 1rem;
+}
+
+.join__anchor-tags {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+}
+
+.join__tutor, .join__tutee, .join__login {
+  width: 100%;
+  border: 1px solid white;
+  background-color: cadetblue;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 0.8rem 0.3rem;
+  font-size: 1.3rem;
+}
+
+.tutee-register__form, .tutor-register__form, .login__form {
+  text-align: center;
+}
+
+.tutee-register__form__labels, .tutor-register__form__labels, .login__form__labels {
+  display: block;
+  color: cadetblue;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.tutee-register__form__inputs:not([type=checkbox]), .tutor-register__form__inputs:not([type=checkbox]), .login__form__inputs:not([type=checkbox]), .tutor-register__form__textarea, .tutee-register__form__textarea {
+  width: 15rem;
+  height: 2.5rem;
+  display: block;
+  margin: 0 auto;
+  border-color: grey;
+  font-size: 1.2rem;
+}
+
+.tutor-register__form__textarea, .tutee-register__form__textarea {
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+
+.tutee-register__form__inputs:not([type=checkbox]), .tutor-register__form__inputs:not([type=checkbox]), .login__form__inputs:not([type=checkbox]) {
+  width: 15rem;
+  height: 2.5rem;
+  display: block;
+  margin: 0 auto;
+  border-color: grey;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tutee-register__form__inputs input[type='checkbox'], {
+  display: inline;
+  background-color: red;
+}
+
+.tutee-register__form__inputs-submit, .tutor-register__form__inputs-submit, .login__form__inputs-submit {
+  width: 8rem;
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tutor-register__subject-container,
+.tutee-register__subject-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tutor-register__form__select,
+.tutee-register__form__select {
+  width: 10rem;
+  height: 1.5rem;
+  border: 2px solid cadetblue;
+  margin-right: 0.2rem;
+}
+
+.tutor-register__error__info,
+.tutee-register__error__info{
+  text-align: center;
+  color: red;
+}
+
+.contact {
+  background-color: cadetblue;
+}
+
+.contact__heading {
+  color: white;
+  padding-top: 2rem;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+
+.contact__container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.contact__form__container {
+  margin: 2rem 0;
+}
+
+.contact__form__inputs, .contact__form__textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  border: 0;
+  border-bottom: 2px;
+}
+
+.contact__form__textarea {
+  height: 10rem;
+}
+
+.contact__form__submit-button {
+  background-color: white;
+  color: cadetblue;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 0;
+}
+
+.contact__details__container {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact__details__lists {
+  list-style: none;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact__details__links {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.footer {
+  text-align: center;
+  font-size: 1rem;
+  color: gray;
+  padding: 0.2rem 0;
+}
+
+.footer__link {
+  color: gray;
+  display: inline;
+}
+
+label {
+  display: block;
+}
+
+textarea {
+  display: block;
+}
+
+a {
+  display: block;
+}
+
+@media screen and (min-width: 650px) {
+  .navbar__links, .pages-nav__links{
+    font-size: 1.5rem;
+  }
+  .heading__title{
+    font-size: 4rem;
+  }
+  .navbar__links, .pages-nav__links {
+    padding: 1rem;
+  }
+  .about__container {
+    width: 60%;
+  }
+  .how {
+    padding: 5rem 0;
+  }
+  .how__container {
+    flex-direction: row;
+    width: 70%;
+  }
+  .how__join, .how__connect, .how__book {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .tutee-register__form__inputs:not([type=checkbox]), .tutor-register__form__inputs:not([type=checkbox]), .login__form__inputs:not([type=checkbox]), .tutor-register__form__textarea, .tutee-register__form__textarea {
+    width: 35rem;
+  }
+  .contact__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact__form__container {
+    width: 50%;
+  }
+  .contact__details__container {
+    width: 48%;
+    align-self: center;
+  }
+}
