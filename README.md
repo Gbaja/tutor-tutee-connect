@@ -44,3 +44,7 @@ Middlewares/Modules: pgpromise, validator, express-session, connect-flash, nodem
 This website was designed and developed by me for practise purpose only. Not  for commercial use.
 
 I used this project an opportunity to  consolidate and demonstrate my knowledge of the tech stack used.
+
+## Thoughts
+
+After learning express and handlebars on my course, I felt like I needed to do something to help me understand better and to learn more about middleswares/npm modules  This project allowed me to do so and I was also able to implement some server side validation.  I used promise for the first time in the is project mostly hrough using the pg-promise npm module, I might have got carried a way with the then's aswell (🙈).
