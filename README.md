@@ -47,4 +47,6 @@ I used this project an opportunity to  consolidate and demonstrate my knowledge 
 
 ## Thoughts
 
-After learning express and handlebars on my course, I felt like I needed to do something to help me understand better and to learn more about middleswares/npm modules  This project allowed me to do so and I was also able to implement some server side validation.  I used promise for the first time in the is project mostly hrough using the pg-promise npm module, I might have got carried a way with the then's aswell (🙈).
+After learning express and handlebars on my course, I felt like I needed to do something to help me understand better and to learn more about middleswares/npm modules  This project allowed me to do so and I was also able to implement some server side validation. I have a few tables(more than necessary) on purpose help me build on my understanding of relationships in sql. This also ties in to why I have long form
+
+I used promise for the first time in this project mostly through using the pg-promise npm module, I might have got carried a way with the then's aswell (🙈). I have learnt a better way to chain my promises to make code cleaer and more readable. Another thing I have since learnt is how to handle errors in express.
