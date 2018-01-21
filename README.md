@@ -15,22 +15,24 @@ Tutors are required to have somone write a reference for them. Referees are abe 
 As a tutor I can: 
 * [x] Register for an account
 * [x] Log in to my account any time
-* See a list of tutees looking for a tutor in the subject I have said I can teach and at the level that I can teach it
-* Express an interest in tutoring someone 
-* Be notified by email if a tutee has booked a session with me and be sent details of that booking
-* Confirm a booking. 
+* [ ] See a list of tutees looking for a tutor in the subject I have said I can teach and at the level that I can teach it
+* [ ] Express an interest in tutoring someone 
+* [ ] Be notified by email if a tutee has booked a session with me and be sent details of that booking
+* [ ] Confirm a booking. 
 
 As a tutee I can:
 * [x] Register for an account
 * [x] Log in to that account anytime
-* See a list of tutors that can teach the subject I need a tutor in and at the level I have specified
-* I can book a session with a tutor and be notified if the session has been accepted
-* I can be notified if a tutor has expressed an interest in tutoring me. 
+* [ ] See a list of tutors that can teach the subject I need a tutor in and at the level I have specified
+* [ ] I can book a session with a tutor and be notified if the session has been accepted
+* [ ] I can be notified if a tutor has expressed an interest in tutoring me. 
 
 As a referee I can: 
 * [x] Be notified if a tutor has put me down as their referee and be sent a link to fill out a reference form for them
 * [x] Go through a check to make sure that ny email has indeed been submitted to be a referee and confirm I know the tutor
-* I can fill out a reference form. 
+* [ 
+
+] I can fill out a reference form. 
 
 ## How 
 
